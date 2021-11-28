@@ -1,0 +1,25 @@
+@import "./layout/base.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/features.scss";
+@import "./blocks/pager.scss";
+@import "./blocks/section.scss";
+@import "./blocks/headline.scss";
+@import "./blocks/benefit.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/interactive-avatar.scss";
+@import "./blocks/form.scss";
+@import "./blocks/order-section.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/fixed-menu.scss";
+
+// normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
