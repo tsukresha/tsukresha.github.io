@@ -1,0 +1,24 @@
+.menu {
+  margin-right: 46px;
+  font-family: Alegreya Sans
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu__item {
+  margin-right: 28px;
+  transition: color 0.5s;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover {
+    color: #E01F3D;
+  }
+}

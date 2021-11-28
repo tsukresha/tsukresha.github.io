@@ -1,0 +1,21 @@
+.features {
+ display: flex;
+}
+.feature__desc-cell {
+  display: flex;
+}
+.feature__pic {
+  margin-right: 22px;
+  width: 35px;
+  
+}
+.features__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.feature__desc {
+  max-width: 100px;
+}
