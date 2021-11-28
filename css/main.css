@@ -1,5 +1,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Play", "Alegreya Sans", sans-serif;
   color: #292929;
@@ -8,14 +17,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-}
-body html {
-  height: 100%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 a {
@@ -30,7 +31,7 @@ ul li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-weight: normal;
 }
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 1174px;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -137,10 +138,10 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0px 50px 0px;
+  background: url("../../img/headphones.png") right center/490px no-repeat;
 }
 
 .hero {
-  background: url("../../img/headphones.png") left 58% bottom 71%/30% auto no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 650px;
@@ -163,7 +164,7 @@ img {
 }
 
 .hero__text-section {
-  max-width: 30%;
+  max-width: 38%;
 }
 
 .hero__icons-section {
@@ -329,7 +330,7 @@ img {
 
 .benefit__desc {
   color: #666666;
-  padding: 0 15%;
+  padding: 0 4%;
 }
 
 .benefits {
@@ -354,10 +355,10 @@ img {
           transform: translateX(50%);
 }
 .benefits__item:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 .benefits__item:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 .benefits__item:last-child:before {
   display: none;

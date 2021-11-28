@@ -4,9 +4,9 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 0px 50px 0px;
+  background: url('../../img/headphones.png') right center/ 490px no-repeat;
 }
 .hero {
-  background: url('../../img/headphones.png') left 58% bottom 71%/ 30% auto no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 650px;
@@ -26,7 +26,7 @@
   line-height: 1;
 }
 .hero__text-section {
-  max-width: 30%;
+  max-width: 38%;
 }
 .hero__icons-section {
   display: flex;
