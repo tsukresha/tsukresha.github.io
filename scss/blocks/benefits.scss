@@ -1,0 +1,33 @@
+// .benefits-section:before {
+//  content: url('../../img/triangle.png');
+//  position: absolute;
+//  bottom: -80px;
+//  left: 0;
+// }
+.benefits {
+  display: flex;
+}
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &:before {
+    content: url("../../img/roundshape.png");
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
