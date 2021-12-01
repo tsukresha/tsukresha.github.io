@@ -5,6 +5,13 @@
   height: 100%;
   padding: 24px 0px 50px 0px;
   background: url('../../img/headphones.png') right center/ 490px no-repeat;
+
+  &::before {
+  content: url('../../img/sticker.png');
+  position: absolute;
+  bottom:-25px;
+  right: 270px;
+  }
 }
 .hero {
   background-color: #F5F5F5;
@@ -31,10 +38,4 @@
 .hero__icons-section {
   display: flex;
   margin-top: 70px;
-}
-.hero-section:before {
-  content: url('../../img/sticker.png');
-  position: absolute;
-  bottom:-25px;
-  right: 270px;
 }

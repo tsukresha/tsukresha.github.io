@@ -140,6 +140,12 @@ img {
   padding: 24px 0px 50px 0px;
   background: url("../../img/headphones.png") right center/490px no-repeat;
 }
+.hero__container::before {
+  content: url("../../img/sticker.png");
+  position: absolute;
+  bottom: -25px;
+  right: 270px;
+}
 
 .hero {
   background-color: #F5F5F5;
@@ -172,13 +178,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 70px;
-}
-
-.hero-section:before {
-  content: url("../../img/sticker.png");
-  position: absolute;
-  bottom: -25px;
-  right: 270px;
 }
 
 .btn {
@@ -226,12 +225,12 @@ img {
 }
 
 .feature__pic {
-  margin-right: 22px;
-  width: 35px;
+  margin-right: 16px;
+  width: 40px;
 }
 
 .features__item {
-  margin-right: 8px;
+  margin-right: 14px;
 }
 .features__item:last-child {
   margin-right: 0px;
@@ -282,6 +281,7 @@ img {
   margin-bottom: 53px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.08;
 }
 
 .headline {
@@ -289,13 +289,14 @@ img {
 }
 
 .headline__title {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .headline__subtitle {
   color: #666666;
   margin-bottom: 62px;
-  padding: 0 25%;
+  padding: 0 21%;
+  line-height: 1.2;
 }
 
 .benefit {
@@ -310,7 +311,7 @@ img {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .benefit__icon {
@@ -326,11 +327,13 @@ img {
 .benefit__title {
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 3px;
 }
 
 .benefit__desc {
   color: #666666;
   padding: 0 4%;
+  line-height: 1.15;
 }
 
 .benefits {
@@ -370,6 +373,7 @@ img {
   overflow: hidden;
   position: relative;
   margin-bottom: 15px;
+  padding: 42px 148px 52px 42px;
 }
 .reviews__display::before {
   content: "";
@@ -392,7 +396,7 @@ img {
 }
 
 .reviews__avatar {
-  width: 254px;
+  width: 252px;
   height: 254px;
 }
 
@@ -408,6 +412,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   margin-left: 40px;
+  padding-top: 30px;
 }
 
 .reviews__title {
@@ -419,7 +424,7 @@ img {
 .reviews__text {
   color: #666666;
   margin-bottom: 38px;
-  width: 58%;
+  line-height: 1.15;
 }
 
 .reviews__author {
@@ -434,6 +439,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.reviews__main-title {
+  margin-bottom: 32px;
 }
 
 .interactive-avatar {
@@ -492,6 +501,9 @@ img {
   display: flex;
   margin-bottom: 11px;
 }
+.form__row--textarea {
+  margin-bottom: 31px;
+}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -512,7 +524,6 @@ img {
 .form__input--textarea {
   height: 154px;
   resize: none;
-  margin-bottom: 36px;
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -525,6 +536,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.form__controls--margin-bottom--increase {
+  margin-bottom: 31px;
 }
 
 .order-section {

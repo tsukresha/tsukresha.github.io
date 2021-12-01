@@ -9,7 +9,7 @@
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 .benefit__icon {
   width: 60px;
@@ -22,9 +22,10 @@
 .benefit__title {
   font-weight: bold;
   font-size: 24px;
-  // margin-bottom: 7px;
+  margin-bottom: 3px;
 }
 .benefit__desc {
   color: #666666;
   padding: 0 4%;
+  line-height: 1.15;
 }

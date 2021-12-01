@@ -12,6 +12,10 @@
 .form__row {
   display: flex;
   margin-bottom: 11px;
+
+  &--textarea {
+    margin-bottom: 31px;
+  }
 }
 .form__block {
   flex: 1;
@@ -30,7 +34,6 @@
   &--textarea {
     height: 154px;
     resize: none;
-    margin-bottom: 36px;
   }
 
   &:focus {
@@ -41,4 +44,8 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+
+  &--margin-bottom--increase {
+    margin-bottom: 31px;
+  }
 }
