@@ -1,14 +1,14 @@
 .section {
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .section__title {
   font-weight: bold;
-  font-size: 48px;
-  margin-bottom: 53px;
+  font-size: rem(48px);
+  margin-bottom: rem(53px);
   text-align: center;
   text-transform: uppercase;
   line-height: 1.08;

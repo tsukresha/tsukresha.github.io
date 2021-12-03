@@ -1,11 +1,11 @@
 .contacts__icon-elem {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
 }
 .contacts__phone {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: rem(18px);
 }

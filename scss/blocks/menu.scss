@@ -1,5 +1,5 @@
 .menu {
-  margin-right: 46px;
+  margin-right: rem(46px);
   font-family: Alegreya Sans
 }
 .menu__list {
@@ -9,14 +9,14 @@
 }
 .menu__link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: rem(18px);
 }
 .menu__item {
-  margin-right: 28px;
+  margin-right: rem(28px);
   transition: color 0.5s;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
   &:hover {
     color: #E01F3D;

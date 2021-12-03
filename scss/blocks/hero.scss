@@ -3,31 +3,31 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0px 50px 0px;
-  background: url('../../img/headphones.png') right center/ 490px no-repeat;
+  padding: rem(24px) rem(0px) rem(50px) rem(0px);
+  background: url('../../img/headphones.png') right center/ rem(490px) no-repeat;
 
   &::before {
   content: url('../../img/sticker.png');
   position: absolute;
-  bottom:-25px;
-  right: 270px;
+  bottom:rem(-25px);
+  right: rem(270px);
   }
 }
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 .hero__title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: rem(48px);
   text-transform: uppercase;
   line-height: 1.1;
-  margin-bottom: 21px;
+  margin-bottom: rem(21px);
 }
 .hero__subtitle {
-  font-size: 21px;
-  margin-bottom: 36px;
+  font-size: rem(21px);
+  margin-bottom: rem(36px);
   padding-right: 5%;
   font-family: Alegreya Sans;
   line-height: 1;
@@ -37,5 +37,5 @@
 }
 .hero__icons-section {
   display: flex;
-  margin-top: 70px;
+  margin-top: rem(70px);
 }

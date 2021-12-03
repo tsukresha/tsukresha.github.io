@@ -5,17 +5,17 @@
   display: flex;
 }
 .feature__pic {
-  margin-right: 16px;
-  width: 40px;
+  margin-right: rem(16px);
+  width: rem(40px);
   
 }
 .features__item {
-  margin-right: 14px;
+  margin-right: rem(14px);
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 .feature__desc {
-  max-width: 100px;
+  max-width: rem(100px);
 }

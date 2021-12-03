@@ -1,13 +1,13 @@
 .pager {
   position: fixed;
-  right: 243px;
-  top:228px;
+  right: rem(243px);
+  top:rem(228px);
 }
 .pager__list {
   position: relative;
 }
 .pager__item {
-  margin-bottom: 18px;
+  margin-bottom: rem(18px);
 
   &:last-child {
     margin-bottom: 0;

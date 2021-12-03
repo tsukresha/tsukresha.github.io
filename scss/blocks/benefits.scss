@@ -1,7 +1,7 @@
 // .benefits-section:before {
 //  content: url('../../img/triangle.png');
 //  position: absolute;
-//  bottom: -80px;
+//  bottom: rem(-80px);
 //  left: 0;
 // }
 .benefits {
@@ -15,7 +15,7 @@
   &:before {
     content: url("../../img/roundshape.png");
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
   }
