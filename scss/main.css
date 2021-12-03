@@ -7,22 +7,12 @@
 
 html {
   height: 100%;
-  font-size: 16px;
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
 }
 
 body {
   font-family: "Play", "Alegreya Sans", sans-serif;
   color: #292929;
+  font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -80,20 +70,9 @@ img {
   margin-bottom: 4.9375rem;
 }
 
-@media screen and (max-width: 768px) {
-  .contacts .header__contacts__phone {
-    display: none;
-  }
-}
-
 .menu {
   margin-right: 2.875rem;
   font-family: Alegreya Sans;
-}
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
 }
 
 .menu__list {
@@ -162,45 +141,17 @@ img {
   padding: 1.5rem 0rem 3.125rem 0rem;
   background: url("../../img/headphones.png") right center/30.625rem no-repeat;
 }
-@media screen and (max-width: 768px) {
-  .hero__container {
-    background: none;
-  }
-}
 .hero__container::before {
   content: url("../../img/sticker.png");
   position: absolute;
   bottom: -1.5625rem;
-  right: 2.5rem;
+  right: 16.875rem;
 }
 
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 40.625rem;
-}
-
-@media screen and (max-width: 768px) {
-  .hero__content {
-    width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
 }
 
 .hero__title {
@@ -228,11 +179,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4.375rem;
-}
-@media screen and (max-width: 768px) {
-  .hero__icons-section {
-    display: none;
-  }
 }
 
 .btn {
@@ -668,7 +614,7 @@ img {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 5px solid transparent;
+  border: 0.3125rem solid transparent;
   display: block;
   position: relative;
 }

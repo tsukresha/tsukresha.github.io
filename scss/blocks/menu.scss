@@ -1,6 +1,10 @@
 .menu {
   margin-right: rem(46px);
-  font-family: Alegreya Sans
+  font-family: Alegreya Sans;
+
+  @include tablets {
+    display: none;
+  }
 }
 .menu__list {
   display: flex;

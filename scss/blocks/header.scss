@@ -3,3 +3,10 @@
   align-items: center;
   margin-bottom: rem(79px);
 }
+
+.contacts .header__contacts__phone {
+
+  @include tablets {
+    display: none;
+  }
+}
