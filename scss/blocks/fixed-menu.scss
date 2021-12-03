@@ -16,7 +16,7 @@
   width: rem(16px);
   height: rem(16px);
   border-radius: 50%;
-  border: 1.rem(5px) solid transparent;
+  border: rem(5px) solid transparent;
   display: block;
   position: relative;
 
@@ -28,7 +28,7 @@
     background: #666666;
     border-radius: 50%;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
