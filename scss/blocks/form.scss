@@ -1,11 +1,24 @@
 .form {
   display: flex;
+ 
+  @include tablets {
+    flex-direction: column;
+    padding: 0 19%;
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 .form__col {
   flex: 1;
   margin-right: rem(27px);
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
@@ -40,6 +53,10 @@
     border-color:  #E01F3D;
     outline: none;
   }
+
+  @include tablets {
+    padding: rem(8px) rem(10px);
+  }
 }
 .form__controls {
   display: flex;
@@ -47,5 +64,15 @@
 
   &--margin-bottom--increase {
     margin-bottom: rem(31px);
+  }
+
+  @include phones {
+    justify-content: center;
+  }
+}
+.form__btns {
+  @include tablets {
+    display: flex;
+    justify-content: center;
   }
 }

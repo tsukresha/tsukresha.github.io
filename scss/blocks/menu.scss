@@ -1,8 +1,14 @@
 .menu {
   margin-right: rem(46px);
   font-family: Alegreya Sans;
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
 
   @include tablets {
+    display: none;
+  }
+
+  @include phones {
     display: none;
   }
 }
@@ -10,14 +16,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .menu__link {
   text-decoration: none;
   font-size: rem(18px);
+  white-space: nowrap;
 }
 .menu__item {
   margin-right: rem(28px);
   transition: color 0.5s;
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: rem(0px);

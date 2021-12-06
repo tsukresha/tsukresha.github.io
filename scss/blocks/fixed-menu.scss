@@ -6,6 +6,7 @@
 }
 .fixed-menu__item {
   margin-bottom: rem(5px);
+
   &--active{
     .fixed-menu__link {
       border-color: #E01F3D;
@@ -16,7 +17,7 @@
   width: rem(16px);
   height: rem(16px);
   border-radius: 50%;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   display: block;
   position: relative;
 

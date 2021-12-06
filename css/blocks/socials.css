@@ -1,0 +1,11 @@
+.socials__icon {
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+  fill: #B3B3B3;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+.socials__icon:hover {
+  fill: #000;
+}

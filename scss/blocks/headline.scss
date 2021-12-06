@@ -9,4 +9,8 @@
   margin-bottom: rem(62px);
   padding: 0 21%;
   line-height: 1.2; 
+
+  @include phones {
+    padding: 0 5%;
+  }
 }

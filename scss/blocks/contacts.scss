@@ -2,10 +2,20 @@
   width: rem(14px);
   height: rem(14px);
   margin-right: rem(6px);
+  flex-shrink: 0;
 }
 .contacts__phone {
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: rem(18px);
+}
+.contacts__text {
+  white-space: nowrap;
+}
+
+.contacts__place {
+  color: #292929;
+  font-size: 18px;
+  margin-bottom: rem(3px);
 }
