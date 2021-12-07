@@ -1,12 +1,14 @@
 .header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: rem(79px);
-}
-
-.contacts .header__contacts__phone {
+  padding-right: rem(25px);
 
   @include tablets {
-    display: none;
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    padding-right: 0;
   }
 }

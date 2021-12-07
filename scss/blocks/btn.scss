@@ -12,6 +12,11 @@
   border: none;
   cursor: pointer;
 
+  @include phones {
+    padding: rem(20px) rem(42px);
+    font-size: rem(23px);
+  }
+
   &:hover {
     background: #CA1B36;
   }

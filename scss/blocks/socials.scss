@@ -1,8 +1,14 @@
 .socials {
   display: flex;
+  position: relative;
+  right: rem(-20px);
 }
 .socials__item {
   margin-right: rem(10px);
+
+  @include phones {
+    margin-right: rem(14px);
+  }
 
   &:last-child {
     margin-right: 0;

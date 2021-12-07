@@ -1,8 +1,21 @@
+.contacts {
+  margin-left: auto;
+
+  @include tablets {
+    font-size: rem(24px);
+  }
+}
 .contacts__icon-elem {
   width: rem(14px);
   height: rem(14px);
   margin-right: rem(6px);
   flex-shrink: 0;
+
+  @include tablets {
+    width: rem(12px);
+    height: rem(12px);
+    fill:#E01F3D;
+  }
 }
 .contacts__phone {
   display: flex;
@@ -18,4 +31,26 @@
   color: #292929;
   font-size: 18px;
   margin-bottom: rem(3px);
+
+  @include tablets {
+    margin-bottom: rem(4px);
+  }
+}
+
+.contacts .header__contacts__phone {
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.footer__contacts__phone {
+
+  @include tablets {
+    color:#E01F3D;
+  }
+
+  @include phones {
+    color:#000;
+   }
 }

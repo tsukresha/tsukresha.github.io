@@ -15,10 +15,10 @@
 
   @include tablets {
     margin-bottom: rem(33px);
-    margin-top: rem(180px);
+    font-size: rem(51px);
   }
 
   @include phones {
-    font-size: 32px;
+    font-size: rem(40px);
   }
 }

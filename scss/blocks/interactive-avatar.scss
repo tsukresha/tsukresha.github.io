@@ -7,6 +7,11 @@
   position: relative;
   margin-right:rem(6px);
 
+  @include phones {
+    width: rem(89px);
+    height: rem(89px);
+  }
+
   &--active {
     border-color:#E01F3D;
   }

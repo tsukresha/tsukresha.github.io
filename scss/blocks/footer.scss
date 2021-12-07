@@ -7,10 +7,14 @@
   background: #fff;
 }
 
-.footer__container {
+.footer-contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .footer__col {
@@ -19,5 +23,14 @@
 
   &--align--right {
     justify-content: flex-end;
+  }
+
+  @include tablets {
+    padding: rem(2px) ;
+
+    &--align--right {
+      padding: rem(2px);
+      padding-right: rem(25px);
+    }
   }
 }

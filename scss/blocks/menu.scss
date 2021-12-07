@@ -1,8 +1,6 @@
 .menu {
-  margin-right: rem(46px);
   font-family: Alegreya Sans;
-  margin: 0 rem(30px);
-  padding-top: rem(5px);
+  padding-top: rem(10px);
 
   @include tablets {
     display: none;
@@ -25,7 +23,7 @@
   white-space: nowrap;
 }
 .menu__item {
-  margin-right: rem(28px);
+  margin-right: rem(26px);
   transition: color 0.5s;
   margin-bottom: rem(10px);
 

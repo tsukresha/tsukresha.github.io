@@ -9,7 +9,8 @@ html {
     font-size: 15px;
   }
   @include phones {
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 1.75vmax;
   }
 }
 body {

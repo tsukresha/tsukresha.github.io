@@ -15,11 +15,16 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(19px);
+  flex-shrink: 0;
+
+  @include tablets {
+    margin-bottom: rem(23px);
+  }
 
   @include phones {
-    height: rem(128px);
-    width: rem(128px);
-    margin-right: rem(12px);
+    height: rem(140px);
+    width: rem(140px);
+    margin-right: rem(15px);
     margin-bottom: 0;
   }
 }
@@ -35,6 +40,15 @@
   font-weight: bold;
   font-size: rem(24px);
   margin-bottom: rem(3px);
+
+  @include tablets {
+    margin-bottom: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(28px);
+    margin-bottom: rem(8px);
+  }
 }
 .benefit__desc {
   color: #666666;
@@ -48,7 +62,8 @@
 .benefit__text {
 
   @include phones {
-    padding: 0 13%
+    padding: rem(14px) 0 0 0;
+
   }
   
 }

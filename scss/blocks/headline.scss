@@ -10,7 +10,13 @@
   padding: 0 21%;
   line-height: 1.2; 
 
+  @include tablets {
+    padding: 0 16%;
+    font-size: rem(17px);
+  }
+
   @include phones {
     padding: 0 5%;
+    font-size: rem(18px);
   }
 }
