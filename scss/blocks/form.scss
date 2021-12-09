@@ -26,16 +26,20 @@
   display: flex;
   margin-bottom: rem(11px);
 
-  &--textarea {
-    margin-bottom: rem(31px);
-  }
-
   @include tablets {
-    margin-bottom: rem(28px);
+    margin-bottom: rem(14px);
   }
 
   @include phones {
-    margin-bottom: rem(14px);
+    margin-bottom: rem(16px);
+  }
+
+  &--textarea {
+    margin-bottom: rem(31px);
+
+    @include tablets {
+      margin-bottom: rem(25.5px);
+    }
   }
 }
 .form__block {
@@ -47,13 +51,14 @@
   }
 }
 .form__title {
-   @include tablets {
-     margin-bottom: rem(3px);
-   }
 
    @include tablets {
+    margin-bottom: rem(3px);
+    font-size: rem(17px);
+  }
+
+  @include phones {
     margin-bottom: rem(5px);
-    font-size: rem(19px);
   }
 }
 .form__input {
@@ -61,6 +66,10 @@
   border: rem(3px) solid transparent;
   padding: rem(18px) rem(12px);
   border-radius: rem(5px);
+
+  @include tablets {
+    padding: rem(6.5px) rem(10px);
+  }
 
   @include phones {
     height: rem(40px);
@@ -75,7 +84,7 @@
     }
 
     @include phones {
-      height: rem(100px);
+      height: rem(91px);
     }
   }
 
@@ -83,27 +92,43 @@
     border-color:  #E01F3D;
     outline: none;
   }
-
-  @include tablets {
-    padding: rem(8px) rem(10px);
-  }
 }
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: rem(16px);
 
-  &--margin-bottom--increase {
-    margin-bottom: rem(31px);
+  @include tablets {
+    margin-bottom: rem(27px);
   }
 
   @include phones {
     justify-content: center;
-    margin-bottom: rem(20px);
+    margin-bottom: rem(30px);
+  }
+
+  &--margin-bottom--increase {
+    margin-bottom: rem(31px);
+
+    @include tablets {
+      margin-bottom: rem(43px);
+    }
   }
 }
 .form__btns {
   @include tablets {
     display: flex;
     justify-content: center;
+    transform: translateX(-4px);
+  }
+
+  @include phones {
+    transform: translateX(rem(10px));
+  }
+}
+.form__submit {
+  
+  @include phones {
+    font-size: rem(19px);
   }
 }

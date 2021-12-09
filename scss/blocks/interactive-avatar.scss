@@ -10,6 +10,7 @@
   @include phones {
     width: rem(89px);
     height: rem(89px);
+    margin: 0;
   }
 
   &--active {

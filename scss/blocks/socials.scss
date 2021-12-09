@@ -20,6 +20,16 @@
   height: rem(30px);
   fill: #B3B3B3;
   transition: fill 0.5s;
+  
+  @include tablets {
+    width: rem(34.5px);
+    height: rem(34.5px);
+  }
+
+  @include phones {
+    width: rem(29px);
+    height: rem(29px);
+  }
 
   &:hover {
     fill: #000;

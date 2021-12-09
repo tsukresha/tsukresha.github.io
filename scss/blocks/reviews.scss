@@ -47,8 +47,8 @@
   }
 
   @include phones {
-    width: rem(160px);
-    height: rem(160px);
+    width: rem(147px);
+    height: rem(150px);
   }
 }
 .reviews__avatar-img {
@@ -64,6 +64,11 @@
   @include tablets {
     padding-left: 0;
     padding-top:rem(32px);
+    margin-left: 0;
+  }
+
+  @include phones {
+    padding-top: rem(22.5px);
   }
 }
 .reviews__title {
@@ -76,7 +81,8 @@
   }
 
   @include phones {
-    font-size: rem(30px);
+    font-size: rem(29px);
+    margin-bottom: rem(8px);
   }
 }
 .reviews__text {
@@ -86,6 +92,10 @@
 
   @include tablets {
     margin-bottom: rem(16px);
+  }
+
+  @include phones {
+    font-size: rem(18.5px);
   }
 }
 .reviews__author {

@@ -21,10 +21,6 @@
   display: flex;
   align-items: center;
 
-  &--align--right {
-    justify-content: flex-end;
-  }
-
   @include tablets {
     padding: rem(2px) ;
 
@@ -33,4 +29,30 @@
       padding-right: rem(25px);
     }
   }
+
+  &--align--right {
+    justify-content: flex-end;
+
+    @include tablets {
+      padding-right: rem(43px);
+    }
+  }
+
+  &:first-child {
+
+    @include phones {
+      margin-bottom: rem(20px);
+    }
+  }
+}
+.footer__contacts__phone {
+
+  @include tablets {
+    color:#E01F3D;
+  }
+
+  @include phones {
+    color:#000;
+    justify-content: center;
+   }
 }

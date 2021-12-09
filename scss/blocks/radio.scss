@@ -3,7 +3,7 @@
   cursor: pointer;
   user-select: none;
   margin-right: rem(24px);
-  margin-bottom: rem(16px);
+  
   &--checkbox {
     .radio__visible {
       border-radius: 15%;
@@ -43,5 +43,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+.radio__title {
+
+  @include phones {
+    font-size: rem(17.6px);
   }
 }
