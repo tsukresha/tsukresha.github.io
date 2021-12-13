@@ -1,0 +1,39 @@
+.dropdown__menu {
+  width: rem(280px);
+  background: #D5D5D5;
+  color: #000000;
+  border-radius: 5px;
+  position: absolute;
+  right: rem(57px);
+  top: rem(-1px);
+  opacity: 0;
+}
+.dropdown__list {
+  padding: rem(28px) rem(25px) rem(34px) rem(26px);
+}
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(14px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.dropdown__icon {
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(12px);
+  text-align: center;
+
+  &--bluetooth {
+    width: rem(25px);
+    height: rem(25px);
+  }
+}
+.dropdown__text {
+  margin-right: rem(51px);
+}
+.dropdown__number {
+  margin-left: auto;
+}

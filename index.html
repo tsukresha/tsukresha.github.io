@@ -78,19 +78,19 @@
           <ul class="features">
             <li class="features__item">
               <div class="feature__desc-cell">
-                <img src="./img/ear.svg" alt="" class="feature__pic">
+                <img src="./img/svg/ear.svg" alt="" class="feature__pic">
                 <div class="feature__desc">Безупречный звук</div>
               </div>
             </li>
             <li class="features__item">
               <div class="feature__desc-cell">
-                <img src="./img/charging.svg" alt="" class="feature__pic">
+                <img src="./img/svg/charging.svg" alt="" class="feature__pic">
                 <div class="feature__desc">До 40 часов работы</div>
               </div>
             </li>
             <li class="features__item">
               <div class="feature__desc-cell">
-                <img src="./img/charger.svg" alt="" class="feature__pic">
+                <img src="./img/svg/charger.svg" alt="" class="feature__pic">
                 <div class="feature__desc">Технология Fast Fuel</div>
               </div>
             </li>
@@ -153,6 +153,90 @@
                 <p>Благодаря технологии Fast Fuel
                   всего через 5 минут зарядки вы
                   сможете слушать музыку ещё 3 часа.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section products -->
+    <section class="section section-products">
+      <div class="container products__container">
+        <div class="products__slider-arrows">
+          <a href="" class="product__slider-arrow product__slider-arrow--direction--left">
+            <img src="./img/left.png" alt="arrow" class="products__arrow--left">
+          </a>
+          <a href="" class="product__slider-arrow product__slider-arrow--direction--right">
+            <img src="./img/right.png" alt="arrow" class="products__arrow--right">
+          </a>
+        </div>
+        <ul class="products__content">
+          <li class="products__block">
+            <img src="./img/headphones-order.png" alt="" class="products__picture">
+          </li>
+          <li class="products__block-content">
+            <div class="products__header">
+              <svg class="products__icon">
+                <use xlink:href="./img/svg/sprite.svg#click"></use>
+              </svg>
+              <div class="dropdown__menu">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <svg class="dropdown__icon dropdown__icon--bluetooth">
+                      <use xlink:href="./img/svg/sprite.svg#bluetooth"></use>
+                    </svg>
+                    <div class="dropdown__text">Bluetooth</div>
+                    <div class="dropdown__number">4.0</div>
+                  </li>
+                  <li class="dropdown__item">
+                    <svg class="dropdown__icon">
+                      <use xlink:href="./img/svg/sprite.svg#nut"></use>
+                    </svg>
+                    <div class="dropdown__text">Дальность</div>
+                    <div class="dropdown__number">12 м</div>
+                  </li>
+                  <li class="dropdown__item">
+                    <svg class="dropdown__icon">
+                      <use xlink:href="./img/svg/sprite.svg#almond"></use>
+                    </svg>
+                    <div class="dropdown__text">Зарядка</div>
+                    <div class="dropdown__number">3 ч</div>
+                  </li>
+                  <li class="dropdown__item">
+                    <svg class="dropdown__icon">
+                      <use xlink:href="./img/svg/sprite.svg#washing-powder"></use>
+                    </svg>
+                    <div class="dropdown__text">Вес</div>
+                    <div class="dropdown__number">215гр</div>
+                  </li>
+                  <li class="dropdown__item">
+                    <svg class="dropdown__icon">
+                      <use xlink:href="./img/svg/sprite.svg#apitherapy"></use>
+                    </svg>
+                    <div class="dropdown__text">Гарантия</div>
+                    <div class="dropdown__number">1 год</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h1 class="products__title">beats solo 3. цвет «атласное серебро»</h1>
+            <div class="products__main-content">
+              <div class="products__text">
+                <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+              </div>
+              <div class="products__desc">
+                <div class="products__desc-cell">
+                  <div class="products__desc-title">Зарядка</div>
+                  <div class="products__desc-hours">2  часа</div>
+                </div>
+                <div class="products__desc-cell">
+                  <div class="products__desc-title">Вес</div>
+                  <div class="products__desc-hours">215 грамм</div>
+                </div>
+              </div>
+              <div class="products__order">
+                <div class="products__price">14 990 ₽</div>
+                <a href="" class="btn btn__products">Заказать</a>
               </div>
             </div>
           </li>
@@ -329,8 +413,8 @@
   <!-- section fixed-menu -->
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href=""
-          class="fixed-menu__link fixed-menu__link--color--red"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active">
+      <a href="" class="fixed-menu__link fixed-menu__link--color--red"></a></li>
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
@@ -341,6 +425,35 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <!-- section fullscreen -->
+  <div class="fullscreen-menu">
+    <a href="" class="fullscreen-menu__close"></a>
+    <nav class="menu menu--active">
+      <ul class="menu__list menu__list--vertical">
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Наушники</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Цены</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Как мы работаем</a>
+        </li>
+        <li class="menu__item menu__item--fullscreen">
+          <a href="" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </body>
 
 </html>

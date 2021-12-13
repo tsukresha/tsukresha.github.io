@@ -35,3 +35,10 @@
     }
   }
 }
+.btn__products {
+
+  @include phones {
+    padding: rem(21px) rem(41px);
+    font-size: rem(16px);
+  }
+}
