@@ -115,14 +115,11 @@ img {
     font-size: 2.25rem;
     color: #fff;
     text-align: center;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
   }
   .menu--active {
     left: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .menu {
-    display: none;
   }
 }
 
@@ -143,7 +140,7 @@ img {
           justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .menu__list--vertical {
+  .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -155,6 +152,11 @@ img {
   text-decoration: none;
   font-size: 1.125rem;
   white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .menu__link {
+    font-size: 2.25rem;
+  }
 }
 
 .menu__item {
@@ -170,8 +172,8 @@ img {
   color: #E01F3D;
 }
 @media screen and (max-width: 768px) {
-  .menu__item--fullscreen {
-    margin-bottom: 0.3125rem;
+  .menu__item {
+    margin-right: 0;
   }
 }
 
@@ -1187,11 +1189,8 @@ img {
 }
 
 .hamburger {
-  width: 1.625rem;
-  height: 1.25rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  width: 26px;
+  height: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1200,6 +1199,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -1208,19 +1208,38 @@ img {
     display: inline-flex;
   }
 }
+@media screen and (max-width: 768px) {
+  .hamburger--active .hamburger__plank {
+    background: white;
+  }
+  .hamburger--active .hamburger__plank:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(6px, 6px);
+            transform: rotate(45deg) translate(6px, 6px);
+  }
+  .hamburger--active .hamburger__plank:nth-child(2) {
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .hamburger--active .hamburger__plank:nth-child(3) {
+    display: none;
+  }
+}
 @media screen and (max-width: 480px) {
-  .hamburger {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .hamburger--active .hamburger__plank:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(7px, 6px);
+            transform: rotate(45deg) translate(7px, 6px);
   }
 }
 
 .hamburger__plank {
   display: block;
   background: #292929;
-  height: 0.25rem;
-  border-radius: 1.875rem;
+  height: 4px;
+  border-radius: 30px;
+  -webkit-transition: background 0.3s, -webkit-transform 0.3s;
+  transition: background 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, background 0.3s, -webkit-transform 0.3s;
 }
 
 .footer {
@@ -1361,15 +1380,50 @@ img {
   z-index: 10;
   top: 52%;
 }
+@media screen and (max-width: 768px) {
+  .product__slider-arrow {
+    top: 9.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__slider-arrow {
+    top: 8.125rem;
+  }
+}
 .product__slider-arrow--direction--left {
   left: -3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .product__slider-arrow--direction--left {
+    left: 6.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__slider-arrow--direction--left {
+    left: 0;
+  }
 }
 .product__slider-arrow--direction--right {
   right: 0.1875rem;
 }
+@media screen and (max-width: 768px) {
+  .product__slider-arrow--direction--right {
+    right: 6.9375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product__slider-arrow--direction--right {
+    right: 0;
+  }
+}
 
 .products__block {
   margin-right: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .products__block {
+    margin-right: 0;
+  }
 }
 
 .products__content {
@@ -1397,9 +1451,14 @@ img {
 
 .products__header {
   margin-bottom: 1.5625rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
 }
 .products__header:hover .dropdown__menu {
   opacity: 1;
+  left: 100%;
 }
 
 .products__picture {
@@ -1467,6 +1526,7 @@ img {
 
 .products__text {
   margin-bottom: 1.5rem;
+  padding-right: 3.125rem;
 }
 @media screen and (max-width: 768px) {
   .products__text {
@@ -1558,9 +1618,9 @@ img {
   color: #000000;
   border-radius: 5px;
   position: absolute;
-  right: 3.5625rem;
   top: -0.0625rem;
   opacity: 0;
+  left: -624.9375rem;
 }
 
 .dropdown__list {

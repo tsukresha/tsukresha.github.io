@@ -4,9 +4,9 @@
   color: #000000;
   border-radius: 5px;
   position: absolute;
-  right: rem(57px);
   top: rem(-1px);
   opacity: 0;
+  left: rem(-9999px);
 }
 .dropdown__list {
   padding: rem(28px) rem(25px) rem(34px) rem(26px);

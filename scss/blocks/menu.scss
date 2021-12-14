@@ -15,14 +15,11 @@
     font-size: rem(36px);
     color: #fff;
     text-align: center; 
+    transition: left .3s;
 
     &--active {
       left: 0;
     }
-  }
-
-  @include phones {
-    display: none;
   }
 }
 .menu__list {
@@ -33,15 +30,18 @@
   justify-content: center;
 
   @include tablets {
-    &--vertical {
-      flex-direction: column;
-    }
+    flex-direction: column;
+    
   }
 }
 .menu__link {
   text-decoration: none;
   font-size: rem(18px);
   white-space: nowrap;
+
+  @include tablets {
+    font-size: rem(36px);
+  }
 }
 .menu__item {
   margin-right: rem(26px);
@@ -56,8 +56,6 @@
   }
 
   @include tablets {
-    &--fullscreen {
-      margin-bottom: rem(5px);
-    }
+    margin-right: 0;
   }
 }

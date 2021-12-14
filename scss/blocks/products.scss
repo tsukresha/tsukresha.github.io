@@ -13,16 +13,42 @@
     z-index: 10;
     top: 52%;
 
+    @include tablets {
+      top: rem(150px);
+    }
+
+    @include phones {
+      top: rem(130px);
+    }
+
     &--direction--left {
       left: rem(-50px);
+      @include tablets {
+        left: rem(110px);
+      }
+
+      @include phones {
+        left: 0;
+      }
     }
 
     &--direction--right {
       right: rem(3px);
+      @include tablets {
+        right: rem(111px);
+      }
+
+      @include phones {
+        right: 0;
+      }
     }
 }
 .products__block {
   margin-right: rem(60px);
+
+  @include tablets {
+    margin-right: 0;
+  }
 }
 .products__content {
   display: flex;
@@ -39,9 +65,12 @@
 }
 .products__header {
   margin-bottom: rem(25px);
+  display: inline-flex;
+  position: relative;
 
   &:hover .dropdown__menu {
     opacity: 1;
+    left: 100%;
   }
 }
 .products__picture {
@@ -100,6 +129,7 @@
 }
 .products__text {
   margin-bottom: rem(24px); 
+  padding-right: rem(50px);
 
   @include tablets {
     padding: 0 10%;
