@@ -43,6 +43,9 @@
       }
     }
 }
+.products__list {
+  display: flex;
+}
 .products__block {
   margin-right: rem(60px);
 
