@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Beats</title>
 </head>
@@ -246,7 +247,7 @@
           </li>
           <li class="products__list">
             <div class="products__block">
-              <img src="./img/headphones-order.png" alt="" class="products__picture">
+              <img src="./img/redheadphones.png" alt="" class="products__picture">
             </div>
             <div class="products__block-content">
               <div class="products__header">
@@ -267,14 +268,14 @@
                         <use xlink:href="./img/svg/sprite.svg#nut"></use>
                       </svg>
                       <div class="dropdown__text">Дальность</div>
-                      <div class="dropdown__number">12 м</div>
+                      <div class="dropdown__number">10 м</div>
                     </li>
                     <li class="dropdown__item">
                       <svg class="dropdown__icon">
                         <use xlink:href="./img/svg/sprite.svg#almond"></use>
                       </svg>
                       <div class="dropdown__text">Зарядка</div>
-                      <div class="dropdown__number">3 ч</div>
+                      <div class="dropdown__number">2 ч</div>
                     </li>
                     <li class="dropdown__item">
                       <svg class="dropdown__icon">
@@ -293,11 +294,11 @@
                   </ul>
                 </div>
               </div>
-              <h1 class="products__title">beats solo 3. цвет «атласное серебро»</h1>
+              <h1 class="products__title">beats solo pro. цвет «красный цитрус»</h1>
               <div class="products__main-content">
                 <div class="products__text">
-                  <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
-                    iPhone — они мгновенно подключатся к нему.</p>
+                  <p>Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два
+                    режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</p>
                 </div>
                 <div class="products__desc">
                   <div class="products__desc-cell">
@@ -492,39 +493,40 @@
       <div class="container">
         <h2 class="section__title">Закажите доставку</h2>
         <form class="form">
+          <input type="hidden" name="to" value="tsukresha@gmail.com">
           <div class="form__col">
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Имя</div>
-                <input type="text" class="form__input">
+                <input type="text" name="name" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Телефон</div>
-                <input type="text" placeholder="89022348912" class="form__input">
+                <input type="text" name="phone" placeholder="89022348912" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Улица</div>
-                <input type="text" class="form__input">
+                <input type="text" name="street" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Дом</div>
-                <input type="text" class="form__input">
+                <input type="text" name="home" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Корпус</div>
-                <input type="text" class="form__input">
+                <input type="text" name="part" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Квартира</div>
-                <input type="text" class="form__input">
+                <input type="text" name="room" class="form__input">
               </label>
               <label class="form__block">
                 <div class="form__title">Этаж</div>
-                <input type="text" class="form__input">
+                <input type="text" name="floor" class="form__input">
               </label>
             </div>
           </div>
@@ -532,7 +534,7 @@
             <div class="form__row form__row--textarea">
               <label class="form__block">
                 <div class="form__title">Комментарий</div>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea name="comment" class="form__input form__input--textarea"></textarea>
               </label>
             </div>
             <div class="form__controls">
@@ -626,11 +628,24 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__content">
+        Сообщение отправлено
+      </div>
+      <div class="modal__button-container">
+        <a href="" class="btn app-submit-btn">Закрыть</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/acco.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

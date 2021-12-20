@@ -11,7 +11,7 @@
     margin: 0 auto;
     position: absolute;
     z-index: 10;
-    top: 52%;
+    top: 40%;
 
     @include tablets {
       top: rem(150px);
@@ -48,9 +48,14 @@
 }
 .products__block {
   margin-right: rem(60px);
+  width: rem(452px);
+  height: rem(452px);
+  flex-shrink: 0;
 
   @include tablets {
     margin-right: 0;
+    width: rem(306px);
+    height: rem(306px);
   }
 }
 .products__content {
@@ -77,18 +82,12 @@
   }
 }
 .products__picture {
-  width: rem(452px);
-  height: rem(452px);
 
   @include tablets {
-    width: rem(306px);
-    height: rem(306px);
     margin-bottom: rem(49px);
   }
 
   @include phones {
-    width: rem(306px);
-    height: rem(306px);
     margin-bottom: rem(26px);
   }
 }

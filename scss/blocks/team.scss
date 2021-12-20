@@ -24,6 +24,8 @@
 }
 .team__item {
   margin-right: rem(20px);
+  position: relative;
+  text-align: center;
 
   &:last-child {
     margin-right: 0;
@@ -39,6 +41,8 @@
   height: 0;
   overflow: hidden;
   transition: height .3s;
+  left: 0; 
+  width: 100%;
 }
 .team__title {
   display: inline-flex;
