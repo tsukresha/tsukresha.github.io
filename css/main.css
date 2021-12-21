@@ -1682,6 +1682,11 @@ img {
   position: absolute;
   top: 100%;
 }
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
 .team--version--mobile {
   display: none;
 }
@@ -1694,7 +1699,6 @@ img {
 }
 @media screen and (max-width: 768px) {
   .team {
-    padding: 0 10%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1714,10 +1718,15 @@ img {
   margin-right: 0;
 }
 
-.team__picture {
+.team__member {
   width: 13.75rem;
   height: 18.125rem;
   margin-bottom: 1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    margin: 0 auto 1.5625rem auto;
+  }
 }
 
 .team__content {

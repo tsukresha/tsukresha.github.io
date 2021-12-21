@@ -6,6 +6,10 @@
       position: absolute;
       top: 100%;
     }
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &--version--mobile {
@@ -17,7 +21,6 @@
   }
 
   @include tablets {
-    padding: 0 10%;
     flex-direction: column;
     align-items: center;
   }
@@ -31,10 +34,14 @@
     margin-right: 0;
   }
 }
-.team__picture {
+.team__member {
   width: rem(220px);
   height: rem(290px);
   margin-bottom: rem(25px);
+
+  @include tablets {
+    margin: 0 auto rem(25px) auto;
+  }
 }
 .team__content {
   text-align: center;
