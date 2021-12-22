@@ -14,17 +14,17 @@
     top: 40%;
 
     @include tablets {
-      top: rem(150px);
+      top: rem(155px);
     }
 
     @include phones {
-      top: rem(130px);
+      top: rem(152px);
     }
 
     &--direction--left {
       left: rem(-50px);
       @include tablets {
-        left: rem(110px);
+        left: rem(133px);
       }
 
       @include phones {
@@ -35,7 +35,7 @@
     &--direction--right {
       right: rem(3px);
       @include tablets {
-        right: rem(111px);
+        right: rem(143px);
       }
 
       @include phones {
@@ -45,6 +45,11 @@
 }
 .products__list {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .products__block {
   margin-right: rem(60px);
@@ -54,19 +59,25 @@
 
   @include tablets {
     margin-right: 0;
-    width: rem(306px);
-    height: rem(306px);
+    width: rem(330px);
+    height: rem(330px);
+    margin-bottom: rem(15px);
+  }
+  @include phones {
+    width: rem(350px);
+    height: rem(350px);
+    margin-bottom: rem(26px);
+  }
+}
+.products__block-content {
+  @include tablets {
+    max-width: 84%;
+    text-align: center;
   }
 }
 .products__content {
   display: flex;
   position: relative;
-
-  @include tablets {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 }
 .section-products {
   background: #F8FAF9;
@@ -79,16 +90,6 @@
   &:hover .dropdown__menu {
     opacity: 1;
     left: 100%;
-  }
-}
-.products__picture {
-
-  @include tablets {
-    margin-bottom: rem(49px);
-  }
-
-  @include phones {
-    margin-bottom: rem(26px);
   }
 }
 .products__icon {
@@ -125,7 +126,7 @@
 
   @include phones {
     margin-bottom: rem(13px);
-    font-size: rem(28px);
+    font-size: rem(34px);
     padding: 0 7%;
   }
 }
@@ -134,11 +135,12 @@
   padding-right: rem(50px);
 
   @include tablets {
-    padding: 0 10%;
+    padding: 0;
   }
 
   @include phones {
     margin-bottom: rem(22px);
+    font-size: rem(17px);
   }
 }
 .products__desc {
@@ -175,6 +177,7 @@
   
   @include tablets {
     justify-content: center;
+    align-items: center;
   }
 }
 .products__desc-hours {
@@ -193,7 +196,7 @@
   }
 
   @include phones {
-    font-size: rem(30px);
-    margin-right: rem(20px);
+    font-size: rem(35px);
+    margin-right: rem(35px);
   }
 }

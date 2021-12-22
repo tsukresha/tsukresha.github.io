@@ -5,6 +5,10 @@
   position: relative;
   margin-bottom: rem(15px);
   padding: rem(42px) rem(148px) rem(52px) rem(42px);
+  display: none;
+  &:active {
+    display: block;
+  }
 
   @include tablets {
     padding: rem(59px) rem(27px) rem(43px);

@@ -1,4 +1,4 @@
-const ValidateFields = (form, fieldsArray) => {
+const validateFields = (form, fieldsArray) => {
   fieldsArray.forEach(field => {
     field.removeClass("input-error");
     if(field.val() .trim() == "") {
@@ -6,7 +6,7 @@ const ValidateFields = (form, fieldsArray) => {
     }
   });
 
-  const errorFields = form.find(."input-error");
+  const errorFields = form.find(".input-error");
 
   return errorFields.length == 0;
 }
@@ -25,10 +25,10 @@ $('.form').submit(e => {
 
   modal.removeClass("error-modal");
 
-  const isValid = validateFields(form [name, phone, comment, to]);
+  const isValid = validateFields(form, [name, phone, comment, to]);
 
   if (isValid) {
-    const request $.ajax({
+    const request = $.ajax({
       url: 'https://webdev-api.loftschool.com/sendmail',
       method: 'post', 
       data: {
