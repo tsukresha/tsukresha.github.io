@@ -727,7 +727,7 @@ img {
   padding: 2.625rem 9.25rem 3.25rem 2.625rem;
   display: none;
 }
-.reviews__display:active {
+.reviews__display.active {
   display: block;
 }
 @media screen and (max-width: 768px) {

@@ -6,7 +6,8 @@
   margin-bottom: rem(15px);
   padding: rem(42px) rem(148px) rem(52px) rem(42px);
   display: none;
-  &:active {
+
+  &.active {
     display: block;
   }
 

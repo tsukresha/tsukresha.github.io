@@ -5,7 +5,7 @@ const findBlockByAlias = (alias) => {
 };
 
 $(".interactive-avatar__link").click(e => {
-  e.preventDafault();
+  e.preventDefault();
 
   const $this = $(e.currentTarget);
   const target = $this.attr("data-open");

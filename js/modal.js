@@ -47,10 +47,6 @@ $('.form').submit(e => {
       const message = data.responseJSON.message;
         content.text(message);
         modal.addClass("error-modal");
-        $.fancybox.open({
-          src: "#modal", 
-          type: "inline"
-        });
     });
 
     request.always(() =>{
