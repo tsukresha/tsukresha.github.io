@@ -1,0 +1,38 @@
+.products-menu-section {
+  background: url(../../img/girl.png) center center/cover no-repeat;
+  position: relative;
+  // color: #FFF;
+}
+.products-menu-section__title {
+  position: absolute;
+  left: rem(84px);
+}
+.products__menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.products-menu__item {
+  display: flex;
+}
+.products-menu__title {
+  position: relative;
+  width: 100px;
+  text-decoration: none;
+}
+.products-menu__text {
+  font-weight: bold;
+  font-size: rem(36px);
+  transform: rotate(270deg);
+}
+.products-menu__content {
+  width: 0;
+  overflow: hidden;
+  position: relative;
+  transition: width .7s;
+}
+.products-menu__container {
+  padding: 31px 52px 31px 38px;
+}
