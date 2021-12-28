@@ -54,8 +54,18 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -291,7 +301,7 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
 }
 
@@ -517,7 +527,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1332,9 +1342,9 @@ img {
   }
 }
 
-.map-section {
-  background: url("../../img/map.jpg") center center/cover no-repeat;
-  position: relative;
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 .socials {
@@ -1838,11 +1848,13 @@ img {
 .products-menu-section {
   background: url(../../img/girl.png) center center/cover no-repeat;
   position: relative;
+  color: #FFF;
 }
 
 .products-menu-section__title {
   position: absolute;
-  left: 5.25rem;
+  left: 9.6875rem;
+  top: 11.875rem;
 }
 
 .products__menu {
@@ -1865,6 +1877,26 @@ img {
   position: relative;
   width: 100px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 4.1875rem;
+}
+.products-menu__title--color--grey {
+  background: #999;
+}
+.products-menu__title--color--black {
+  background: #151515;
+}
+.products-menu__title--color--pink {
+  background: #E01F3C;
 }
 
 .products-menu__text {
@@ -1872,6 +1904,7 @@ img {
   font-size: 2.25rem;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+  white-space: nowrap;
 }
 
 .products-menu__content {
@@ -1884,4 +1917,46 @@ img {
 
 .products-menu__container {
   padding: 31px 52px 31px 38px;
+}
+
+.player-section {
+  background: #F8FAF9;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  background: url(../../img/playerman.jpg) center center/cover no-repeat;
+}
+
+.player__controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2.1875rem;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.5625rem;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
