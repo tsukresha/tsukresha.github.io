@@ -23,7 +23,7 @@
 .products-menu__item {
   display: flex;
 
-  @include tablets {
+  @include phones {
     &.active {
       z-index: 3;
       position: absolute;

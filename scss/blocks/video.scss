@@ -45,6 +45,16 @@
     align-items: flex-start;
     width: rem(662px);
     height: rem(391px);
+
+    @include tablets {
+        width: rem(594px);
+        height: rem(353px);
+    }
+
+    @include phones {
+        width: rem(394px);
+        height: rem(233px);
+    }
 }
 
 .video__box {

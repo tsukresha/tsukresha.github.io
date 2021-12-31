@@ -1878,7 +1878,7 @@ div#map {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .products-menu__item.active {
     z-index: 3;
     position: absolute;
@@ -1969,6 +1969,18 @@ div#map {
           align-items: flex-start;
   width: 41.375rem;
   height: 24.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .video__wrapper {
+    width: 37.125rem;
+    height: 22.0625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video__wrapper {
+    width: 24.625rem;
+    height: 14.5625rem;
+  }
 }
 
 .video__box {
