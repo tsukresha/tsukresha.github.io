@@ -114,10 +114,6 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
-
-  @include tablets {
-    margin-bottom: rem(180px);
-  }
 }
 .reviews__main-title {
   margin-bottom: rem(32px);

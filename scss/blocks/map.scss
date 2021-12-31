@@ -1,8 +1,7 @@
-// .map-section {
-//   background: url('../../img/map.jpg') center center/ cover no-repeat;
-//   position: relative;
-// }
-.map {
+.map-section {
+  position: relative;
+}
+div#map {
   width: 100%;
   height: 100%;
 }

@@ -27,6 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  height: 100%;
 }
 
 a {
@@ -301,8 +302,6 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: 100%;
-  min-height: 40.625rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -878,11 +877,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  .reviews__switcher {
-    margin-bottom: 11.25rem;
-  }
-}
 
 .reviews__main-title {
   margin-bottom: 2rem;
@@ -1342,7 +1336,11 @@ img {
   }
 }
 
-.map {
+.map-section {
+  position: relative;
+}
+
+div#map {
   width: 100%;
   height: 100%;
 }
@@ -1866,11 +1864,29 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .products__menu {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 
 .products-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__item.active {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .products-menu__title {
@@ -1913,50 +1929,236 @@ img {
   position: relative;
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
+  background: rgba(51, 53, 55, 0.9);
 }
 
 .products-menu__container {
   padding: 31px 52px 31px 38px;
 }
 
-.player-section {
+.video {
   background: #F8FAF9;
 }
 
-.player {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.player__splash {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer;
-  background: url(../../img/playerman.jpg) center center/cover no-repeat;
-}
-
-.player__controls {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 2.1875rem;
-  background: #FFF;
+.video__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1.5625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.map {
+.video__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 41.375rem;
+  height: 24.4375rem;
+}
+
+.video__box {
+  position: relative;
+  width: 100%;
+}
+
+.video__player-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 82px;
+  height: 118px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.video__btn-img {
+  max-width: 100%;
+  height: 4.5rem;
+  width: 5rem;
+}
+
+.video__player-img--active {
+  opacity: 0;
+}
+
+.video__player {
   width: 100%;
   height: 100%;
+  display: block;
+}
+
+.video__toolbar {
+  width: 100%;
+  height: 35px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.duration__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 1.25rem;
+}
+
+.duration__img {
+  margin-right: 0.25rem;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border: 11px solid transparent;
+  border-left-color: #fff;
+  border-right-width: 0;
+  background: transparent;
+  outline: none;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.duration__img.active {
+  border: 7px solid #333333;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 1px;
+}
+
+.duration__length-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.duration__length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#E01F3D), color-stop(0%, #E01F3D), color-stop(0%, #333333));
+  background: linear-gradient(90deg, #E01F3D 0%, #E01F3D 0%, #333333 0%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+}
+
+.duration__length--other {
+  width: 58px;
+  height: 4px;
+}
+
+.duration__length::-webkit-slider-runnable-track {
+  color: #E01F3D;
+  -webkit-appearance: none;
+}
+
+.duration__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #E01F3D;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.duration__length::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: #E01F3D;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+  position: relative;
+}
+.sound:before {
+  content: "";
+  width: 29px;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  display: block;
+  left: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(42deg);
+          transform: translateY(-50%) rotate(42deg);
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.sound.active:before {
+  opacity: 1;
+}
+
+.sound__btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.sound__mic {
+  cursor: pointer;
+  height: 20px;
+  width: 36px;
+}
+
+.sound__volume {
+  margin-left: 10px;
+  margin-top: -5px;
 }

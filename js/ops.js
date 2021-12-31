@@ -1,11 +1,13 @@
 const sections = $("section");
 const display = $(".maincontent");
+const sideMenu = $(".fixed-menu")
+const menuItems = sideMenu.find(".fixed-menu__item")
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
-const isMobile = MobileDetect.mobile();
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
-section.first().addClass("active");
+sections.first().addClass("active");
 
 const countSectionPosition = sectionEq => {
   const position = sectionEq * -100;
@@ -15,32 +17,45 @@ const countSectionPosition = sectionEq => {
     return 0;
   }
 
-  return = position;
+  return position;
 }
 
-const resetActiveClassForItem = (items, itemEq, actieClass) => {
+const changeMenuThemeForSection = sectionEq => {
+  const currentSection = section.eq(sectionEq);
+  const menuTheme = currentSection.attr("data-sidemenu-theme");
+  const activeClass = "fixed-menu--white";
+
+  if (menuTheme == "black") {
+    sideMenu.removeClass(activeClass);
+  } else {
+    sideMenu.addClass(activeClass);
+  }
+}
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
   items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 }
 
 const performTransition = sectionEq => {
 
-  if (inScroll) return;
+  if (window.isScrollBlocked) return;
 
     const transitionOver = 1000;
     const mouseInertiaOver = 300;
 
-    inScroll = true;
+    window.isScrollBlocked = true;
 
-    const position = sectionEq * countSectionPosition(sectionEq);
+    const position = countSectionPosition(sectionEq);
 
     display.css({
-    transform: 'translateY(${position}%)'
+    transform: `translateY(${position}%)`
   });
 
   resetActiveClassForItem(sections, sectionEq, "active");
 
   setTimeout (() => {
-    inScroll = false;
+    window.isScrollBlocked = false;
+    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
   }, transitionOver + mouseInertiaOver);
 }
 
@@ -54,7 +69,7 @@ const viewportScroller = () => {
       if (nextSection.length) {
         performTransition(nextSection.index())
       }
-    }
+    },
 
     prev() {
       if (prevSection.length) {
@@ -79,7 +94,7 @@ $(window).on("wheel", e => {
 $(window).on("keydown", e => {
 
 const tagName = e.target.tagName.toLowerCase();
-const userTypingInInputs = tagName == "input" || && tagName == "textarea";
+const userTypingInInputs = tagName == "input" || tagName == "textarea";
 const scroller = viewportScroller();
 
   if(userTypingInInputs) return; 
@@ -100,9 +115,10 @@ $(".wrapper").on("touchmove", e => e.preventDefault());
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
 
+  window.isScrollBlocked = false;
   const $this = $(e.currentTarget);
   const target = $this.attr("data-scroll-to");
-  const reqSection = $("[data-section-id=${target}]");
+  const reqSection = $(`[data-section-id=${target}]`);
 
   performTransition(reqSection.index());
 });

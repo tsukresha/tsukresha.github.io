@@ -14,9 +14,25 @@
   top: 0;
   bottom: 0;
   display: flex;
+  
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 .products-menu__item {
   display: flex;
+
+  @include tablets {
+    &.active {
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 .products-menu__title {
     position: relative;
@@ -48,6 +64,7 @@
   overflow: hidden;
   position: relative;
   transition: width .7s;
+  background: rgba(51 53 55 / 90%);
 }
 .products-menu__container {
   padding: 31px 52px 31px 38px;
